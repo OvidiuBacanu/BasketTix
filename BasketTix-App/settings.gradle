@@ -1,0 +1,8 @@
+rootProject.name = 'Lab8_JAVA_MPP'
+include 'Model'
+include 'Server'
+include 'Client'
+include 'Networking'
+include 'Persistence'
+include 'RestServices'
+

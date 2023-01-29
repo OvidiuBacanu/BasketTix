@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+    id 'application'
+}
+
+javafx {
+    version = "13"
+    modules = [ 'javafx.controls' , 'javafx.fxml']
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile project (':Model')
+    compile project (':Networking')
+
+    compile(files('C:\\Program Files\\Java\\itextpdf-5.5.9.jar'))
+}

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MainController">
+   <children>
+      <Label layoutX="425.0" layoutY="50.0" text="Customer Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="425.0" layoutY="131.0" text="Nr Seats">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerNameText" layoutX="425.0" layoutY="77.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nrSeatsText" layoutX="425.0" layoutY="157.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="sellButton" layoutX="465.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleSellTicket" prefHeight="50.0" prefWidth="95.0" text="Sell">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="425.0" layoutY="220.0" text="Selected Match">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="selectedMatchText" layoutX="425.0" layoutY="247.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="searchButton" layoutX="172.0" layoutY="305.0" mnemonicParsing="false" onAction="#handleSearch" prefHeight="50.0" prefWidth="95.0" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="matchesTable" layoutX="31.0" layoutY="31.0" prefHeight="255.0" prefWidth="373.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="nameTeam1Column" prefWidth="75.0" text="Team 1" />
+            <TableColumn fx:id="nameTeam2Column" prefWidth="75.0" text="Team 2" />
+            <TableColumn fx:id="priceColumn" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="seatsColumn" prefWidth="75.0" text="Seats" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

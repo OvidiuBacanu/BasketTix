@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+                "-//Hibernate/Hibernate Mapping DTD//EN"
+                "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+<!--    <class name="Domain.Entity" table="Entities">-->
+<!--        <id name="id" column="id">-->
+<!--            <generator class="increment"/>-->
+<!--        </id>-->
+<!--    </class>-->
+
+<!--    <joined-subclass name="Domain.User" table="Users" extends="Domain.Entity">-->
+<!--        <key column="id" />-->
+<!--        <property-->
+<!--                name="username"-->
+<!--                column="username"/>-->
+<!--        <property-->
+<!--                name="password"-->
+<!--                column="password"/>-->
+<!--    </joined-subclass>-->
+        <class name="Domain.User" table="Users">
+            <id name="id" type="long" column="id">
+                <generator class="increment"/>
+            </id>
+            <property
+                    name="username"
+                    column="username"/>
+            <property
+                    name="password"
+                    column="password"/>
+        </class>
+</hibernate-mapping>
